@@ -46,7 +46,7 @@ p {
 }
 
 .container {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -288,18 +288,27 @@ footer h4 {
 
 @media (max-width: 983px) {
   .container {
-    width: 95%;
+    max-width: 95%;
   }
-}
 
-@media (max-width: 576px) {
   .mobile-center {
     text-align: center;
     border: none;
   }
+  
+    .vl:after {
+      display: none;
+    }
+}
 
-  .vl:after {
-    display: none;
+@media (max-width: 576px) {
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  .course-title {
+    margin-top: 5px;
   }
 
   .dotted-bottom {
@@ -314,5 +323,10 @@ footer h4 {
 
   .side-intro {
     width: 95%;
+  }
+
+  .select label span {
+    font-size: 0.8em;
+    font-weight: 600;
   }
 }
