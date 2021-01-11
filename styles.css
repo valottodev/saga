@@ -294,6 +294,9 @@ footer h4 {
   .container {
     max-width: 95%;
   }
+}
+
+@media (max-width: 768px) {
 
   .mobile-center {
     text-align: center;
