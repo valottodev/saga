@@ -36,10 +36,17 @@ h2 {
 h3 {
   color: var(--orange);
   font-size: 2em;
+  display: inline-block;
 }
 
 p {
   margin-bottom: 0;
+  font-size: 1.1em;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .main-img {
@@ -47,7 +54,7 @@ p {
 }
 
 .main-img img {
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 .highlight {
@@ -55,7 +62,7 @@ p {
   background-color: var(--orange);
 }
 
-.evo {
+.vl {
   text-align: right;
   border-right: 5px solid var(--purple);
 }
@@ -65,7 +72,7 @@ p {
 }
 
 .video {
-  width: 50%;
+  width: 100%;
   height: 200px;
   background-color: var(--video);
   display: grid;
@@ -73,15 +80,32 @@ p {
 }
 
 .course-icon {
+  max-width: 66px;
   border-radius: 3px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .course-aval {
   padding: 2px 15px 4px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.description {
+  font-size: 1.3em;
 }
 
 .side-intro {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.side-intro h3 {
+  font-size: 2.5em;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .form-input {
@@ -181,6 +205,8 @@ textarea {
   background: var(--input-background);
   border: 2px solid var(--orange);
   color: var(--input-text);
+  width: 100%;
+  padding: 10px;
   outline: none;
   border-radius: 3px;
   resize: none;
@@ -217,8 +243,14 @@ footer h4 {
   color: white;
 }
 
+@media (max-width: 983px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media (max-width: 576px) {
-  .evo {
+  .mobile-center {
     text-align: center;
     border: none;
   }
@@ -227,4 +259,5 @@ footer h4 {
     border: none;
     background-color: var(--input-background);
   }
+
 }
