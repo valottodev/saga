@@ -326,7 +326,10 @@ footer h4 {
   }
 
   .select label span {
-    font-size: 0.8em;
-    font-weight: 600;
+    padding: 5px 0;
+  }
+
+  footer {
+    text-align: center;
   }
 }
