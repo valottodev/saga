@@ -3,6 +3,7 @@
 :root {
   --orange: rgb(255, 53, 39);
   --purple: rgb(105, 0, 129);
+  --light-purple: rgb(152, 32, 148);
   --text: rgb(31, 0, 80);
   --input-text: rgba(31, 0, 80, 0.7);
   --background: rgb(189, 226, 233);
@@ -64,7 +65,18 @@ p {
 
 .vl {
   text-align: right;
-  border-right: 5px solid var(--purple);
+}
+
+.vl:after {
+  content: "";
+  display: inline-block;
+  background-color: var(--light-purple);
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right:0;
 }
 
 .dotted-bottom {
@@ -182,7 +194,6 @@ p {
 .select label span {
   position: relative;
   background: var(--input-background);
-  padding: 3px 18px;
   border: 2px solid var(--orange);
   border-radius: 20px;
   user-select: none;
@@ -217,12 +228,13 @@ textarea:focus {
   border: 2px solid var(--text);
 }
 
+
 .btn {
   background-color: var(--purple);
   border: none;
   width: 60%;
-  margin: 0 auto;
   color: white;
+  margin: 0 auto;
   text-transform: uppercase;
   border: 2px solid var(--background);
 }
@@ -257,7 +269,13 @@ footer h4 {
 
   .dotted-bottom {
     border: none;
+  }
+
+  .bg-mobile {
     background-color: var(--input-background);
   }
 
+  .side-intro {
+    width: 95%;
+  }
 }
