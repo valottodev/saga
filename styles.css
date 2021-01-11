@@ -59,13 +59,20 @@ p {
 .top-button {
   width: 40vw;
   margin: 10px;
+  border: 1px solid var(--background);
   border-radius: 3px;
 }
 
 .mid-button {
   width: 100%;
   margin-top: 15px;
-  border-radius: 8px;
+  border: 1px solid var(--background);
+  border-radius: 3px;
+}
+
+.top-button:active,
+.mid-button:active {
+  box-shadow: 0 0 0px 1px var(--orange);
 }
 
 .main-img {
@@ -301,6 +308,8 @@ footer h4 {
 
   .bg-mobile {
     background-color: var(--input-background);
+    margin-bottom: 18px;
+    border-radius: 3px;
   }
 
   .side-intro {
