@@ -21,7 +21,8 @@
 
 body {
   background-color: var(--background);
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif; 
+  font-style: italic;
   font-weight: 500;
 }
 
@@ -51,7 +52,8 @@ p {
 }
 
 .topo {
-  box-shadow: 0 8px 6px -6px rgb(91, 150, 160);
+  box-shadow: 0 -15px 6px 17px rgb(91, 150, 160);
+  margin: 0 auto;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -326,7 +328,7 @@ footer h4 {
   }
 
   .select label span {
-    padding: 5px 0;
+    padding: 2px 0;
   }
 
   footer {
