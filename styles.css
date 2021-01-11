@@ -50,6 +50,24 @@ p {
   margin: 0 auto;
 }
 
+.topo {
+  box-shadow: 0 8px 6px -6px rgb(91, 150, 160);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.top-button {
+  width: 40vw;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.mid-button {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
 .main-img {
   background-image: radial-gradient(closest-side, #fff, var(--background));
 }
@@ -65,6 +83,7 @@ p {
 
 .vl {
   text-align: right;
+  position: relative;
 }
 
 .vl:after {
@@ -76,7 +95,12 @@ p {
   border-radius: 5px;
   position: absolute;
   top: 0;
-  right:0;
+  right:-15px;
+  margin-right: 12px;
+}
+
+.mobile-center {
+  padding: 0 2  0px;
 }
 
 .dotted-bottom {
@@ -105,7 +129,7 @@ p {
 }
 
 .description {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .side-intro {
@@ -265,6 +289,10 @@ footer h4 {
   .mobile-center {
     text-align: center;
     border: none;
+  }
+
+  .vl:after {
+    display: none;
   }
 
   .dotted-bottom {
