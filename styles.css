@@ -235,9 +235,6 @@ p {
   transition: all 0.3s ease;
 } 
 
-.select label span:hover {
-  background-color: var(--orange-hover);
-}
 
 .select label input[type="radio"]:checked + span, 
 .select label input[type="checkbox"]:checked + span {
@@ -270,9 +267,14 @@ textarea:focus {
   margin: 0 auto;
   text-transform: uppercase;
   border: 2px solid var(--background);
+  font-weight: 500;
 }
 
 .btn:hover {
+  color: white;
+}
+
+.btn:active {
   color: white;
   text-shadow: 0 0 3px black;
   box-shadow: 0 0 0px 2px var(--orange);
@@ -298,9 +300,22 @@ footer h4 {
     border: none;
   }
   
-    .vl:after {
-      display: none;
-    }
+  .vl:after {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .select label span:hover {
+    background-color: var(--orange-hover);
+  }
+
+  .btn:hover {
+    color: white;
+    text-shadow: 0 0 3px black;
+    box-shadow: 0 0 0px 2px var(--orange);
+  }
+  
 }
 
 @media (max-width: 576px) {
